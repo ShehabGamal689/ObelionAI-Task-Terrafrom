@@ -5,23 +5,21 @@ Modular Terraform configuration for AWS infrastructure deployment.
 ## 📁 Project Structure
 
 Terraform_AWS/
-├── main.tf # Root module - ties everything together
+├── main.tf # Root module 
 ├── variables.tf # Input variables
 ├── outputs.tf # Output values
-├── terraform.tfvars # Variable values (create from example)
-├── terraform.tfvars.example # Example variables file
-├── providers.tf # Provider configuration
-│
+├── terraform.tfvars # Variable values 
+
 ├── modules/ # Reusable modules
 │ ├── network/ # VPC, subnets, routing
 │ │ ├── main.tf
 │ │ ├── variables.tf
 │ │ └── outputs.tf
-│ ├── compute/ # EC2 instances, auto scaling
+│ ├── compute/ # EC2 instances
 │ │ ├── main.tf
 │ │ ├── variables.tf
 │ │ └── outputs.tf
-│ ├── security/ # Security groups, IAM roles
+│ ├── security/ # Security groups
 │ │ ├── main.tf
 │ │ ├── variables.tf
 │ │ └── outputs.tf
