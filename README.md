@@ -1,11 +1,9 @@
-markdown
-Copy
-Download
 # Terraform AWS Infrastructure
 
 Modular Terraform configuration for AWS infrastructure deployment.
 
 ## 📁 Project Structure
+
 Terraform_AWS/
 ├── main.tf # Root module - ties everything together
 ├── variables.tf # Input variables
@@ -37,31 +35,29 @@ Terraform_AWS/
 │ └── outputs.tf
 └── README.md
 
-text
-Copy
-Download
 
 ## 🚀 Quick Start
 
-### 1. Prerequisites
-```bash
+### Prerequisites
+```
+bash
 # Install Terraform
 # Install AWS CLI and configure credentials
 aws configure
-2. Setup
+```
+Setuo
+```
 bash
-Copy
-Download
 git clone <repository-url>
 cd Terraform_AWS
 
 # Copy and edit variables
 cp terraform.tfvars.example terraform.tfvars
 # Edit terraform.tfvars with your values
-3. Deploy
+```
+Deployment
+```
 bash
-Copy
-Download
 # Initialize
 terraform init
 
@@ -70,17 +66,11 @@ terraform plan
 
 # Apply configuration
 terraform apply
-4. Destroy
-bash
-Copy
-Download
-# Remove all resources
-terraform destroy
+```
 ⚙️ Configuration
-terraform.tfvars
-hcl
-Copy
-Download
+
+```
+bash
 # Required Variables
 project_name = "my-project"
 environment  = "dev"
@@ -96,7 +86,9 @@ key_name      = "my-keypair"
 # Database
 db_instance_class = "db.t3.micro"
 db_name          = "mydatabase"
-📞 Modules Overview
+```
+
+🏗️ Modules
 Network Module
 VPC with public/private subnets
 
@@ -135,6 +127,8 @@ SNS topics
 Dashboards
 
 📊 Outputs
+After deployment, you'll get:
+
 VPC ID and subnet IDs
 
 EC2 instance public IPs
@@ -143,4 +137,5 @@ RDS endpoint
 
 Load balancer DNS
 
-Note: Review and customize terraform.tfvars before deployment
+
+Note: Review and customize terraform.tfvars before deployment.
