@@ -45,7 +45,7 @@ bash
 # Install AWS CLI and configure credentials
 aws configure
 ```
-Setuo
+Setup
 ```
 bash
 git clone <repository-url>
@@ -137,5 +137,7 @@ RDS endpoint
 
 Load balancer DNS
 
-
+```
+bash
 Note: Review and customize terraform.tfvars before deployment.
+```
