@@ -40,14 +40,12 @@ Terraform_AWS/
 
 ### Prerequisites
 ```
-bash
 # Install Terraform
 # Install AWS CLI and configure credentials
 aws configure
 ```
 Setup
 ```
-bash
 git clone <repository-url>
 cd Terraform_AWS
 
@@ -57,7 +55,6 @@ cp terraform.tfvars.example terraform.tfvars
 ```
 Deployment
 ```
-bash
 # Initialize
 terraform init
 
@@ -70,7 +67,6 @@ terraform apply
 ⚙️ Configuration
 
 ```
-bash
 # Required Variables
 project_name = "my-project"
 environment  = "dev"
@@ -138,6 +134,5 @@ RDS endpoint
 Load balancer DNS
 
 ```
-bash
 Note: Review and customize terraform.tfvars before deployment.
 ```
